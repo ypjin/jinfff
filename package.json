@@ -1,9 +1,10 @@
 {
   "name": "jinfff",
-  "version": "1.0.3",
+  "version": "1.0.9",
   "description": "",
   "framework": "none",
   "main": "app.js",
+  "healthCheck": true,
   "service": {"env_id":"","org_id":""},
   "keywords": [
   ],
@@ -16,11 +17,16 @@
     "type": "git",
     "url": ""
   },
+  "engines": {
+     "node": "0.10.22"
+  },
   "preferGlobal": false,
   "dependencies": {
-      "async": "*",
-      "lodash": "*",
-      "pkginfo": "*"
+	"clone": "*",
+	"ttys": "*",
+	"express": "*"
+  },
+  "scripts": {
   },
   "license":"",
   "private": true
